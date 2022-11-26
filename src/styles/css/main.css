@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+html {
+  font-size: 20px;
+}
+
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  background: url(../../assets/image/pictures/Background_elements.png);
+  background-size: cover;
+  background-color: #172048;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+  position: relative;
+  padding: 0 0.75rem;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+.header-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 75rem;
+  margin: 3rem auto;
+}
+
+.header-navigation__link {
+  font-family: "Inter";
+  font-size: 0.9rem;
+  color: #F8F8F8;
+  text-decoration: none;
+  padding: 1.25rem;
+}
+
+.header-item__burger-menu {
+  width: 16px;
+  height: 1px;
+  background-color: #F8F8F8;
+  position: relative;
+}
+.header-item__burger-menu::after {
+  content: "";
+  width: 16.5px;
+  height: 1px;
+  background-color: #F8F8F8;
+  bottom: 6px;
+  position: absolute;
+}
+.header-item__burger-menu::before {
+  content: "";
+  width: 16.5px;
+  height: 1px;
+  background-color: #F8F8F8;
+  top: 6px;
+  position: absolute;
+}

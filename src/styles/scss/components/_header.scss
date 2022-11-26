@@ -1,0 +1,38 @@
+.header-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 75rem;
+	margin: 3rem auto;
+}
+.header-navigation {
+	&__link {
+		font-family: $mainFont;
+		font-size: 0.9rem;
+		color: $textColor;
+		text-decoration: none;
+		padding: 1.25rem;
+	}
+}
+.header-item__burger-menu {
+	width: 16px;
+	height: 1px;
+	background-color: $textColor;
+    position: relative;
+	&::after {
+        content: '';
+		width: 16.5px;
+		height: 1px;
+		background-color: $textColor;
+        bottom: 6px;
+        position: absolute;
+	}
+    &::before {
+        content: '';
+		width: 16.5px;
+		height: 1px;
+		background-color: $textColor;
+        top: 6px;
+        position: absolute;
+	}
+}
