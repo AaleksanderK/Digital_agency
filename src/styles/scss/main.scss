@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import './variables/_var';
-@import './components/_global';
-@import './config/_reset';
-@import './components/_header';
-
-// html{
-//     font-size: 20px;
-//     scroll-behavior: smooth;
-// }
+@import '../scss/config/reset';
+@import '../scss/variables/var';
+@import '../scss/components/global';
+@import '../scss/components/header';
+@import '../scss/components/banner';
+@import '../scss/components/about-us';
+@import '../scss/components/photo-frames';
+@import '../scss/components/approach'

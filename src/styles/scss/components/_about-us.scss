@@ -1,0 +1,63 @@
+.about-us-container {
+	// .about-us-container__content
+
+	&__content {
+		display: flex;
+		justify-content: center;
+		padding: 3rem 0;
+	}
+}
+.content-text {
+	padding: 0 2rem;
+	// .content-text__title
+
+	&__title {
+		font-family: $mainFont;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 58px;
+		color: $textColor;
+		text-transform: capitalize;
+		max-width: 438px;
+		padding: 0 0 2rem;
+	}
+
+	// .content-text__paragraph
+
+	&__paragraph {
+		font-family: $mainFont;
+		color: $textColor;
+		font-size: 16px;
+		line-height: 30px;
+		max-width: 539px;
+		padding-bottom: 2rem;
+	}
+}
+.fan-facts {
+	display: flex;
+	justify-content: space-evenly;
+    padding: 0 0 4rem;
+    max-width: 966px;
+    margin: 0 auto;
+}
+
+.fan-fact {
+	// .fan-fact__title
+
+	&__title {
+		font-family: $mainFont;
+		color: $textColor;
+		font-weight: 700;
+		font-size: 48px;
+        text-align: center;
+	}
+
+	// .fan-fact__subtitle
+
+	&__subtitle {
+		font-family: $mainFont;
+		color: $textColor;
+		font-size: 20px;
+        text-align: center;
+	}
+}

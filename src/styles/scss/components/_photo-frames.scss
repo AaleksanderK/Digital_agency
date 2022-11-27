@@ -1,0 +1,64 @@
+.photo-frames {
+	display: flex;
+	position: relative;
+
+	// .photo-frames__left-frame
+
+	&__left-frame {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .photo-frames__right-frame
+
+	&__right-frame {
+		display: flex;
+		flex-direction: column;
+		margin: 3rem 1.1rem ;
+
+	}
+}
+
+.left-frame__presentation{
+	max-width: 264px;
+		max-height: 264px;
+		border-radius: 50px 0px 0px 0px;
+	margin-bottom: 1.1rem;
+}
+.left-frame__accord{
+	max-width: 220px;
+	max-height: 220px;
+	margin-left: 2rem;
+}
+
+.left-frame__ornament-line{
+	max-width: 11px;
+	max-height: 103px;
+	position: absolute;
+top: 0;
+left: 55%;
+}
+.left-frame__development {
+	max-width: 220px;
+	max-height: 220px;
+	border-radius: 0px 50px 0px 0px;
+	margin-bottom: 1.1rem;
+z-index: 1;
+
+
+}
+.left-frame__miting{
+	max-width: 264px;
+	max-height: 264px;
+	border-radius: 0px 0px 50px 0px;
+	z-index: 1;
+}
+
+.left-frame__cercle-line{
+	max-width: 174px;
+	max-height: 168px;
+	position: absolute;
+bottom: 0;
+left: 80%;
+z-index: 0;
+}

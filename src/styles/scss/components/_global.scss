@@ -1,17 +1,22 @@
-html{
-    font-size: 20px;
-    scroll-behavior: smooth;
-
+html {
+	font-size: 20px;
+	scroll-behavior: smooth;
 }
-.wrapper{
-    background:  url(../../assets/image/pictures/Background_elements.png) ;
-    background-size: cover;
-    background-color: $bgColor;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    position: relative;
-    padding: 0 .75rem;
 
-}
+
+    .wrapper{
+		background-image: url(../../assets/image/pictures/Background_elements.png);
+		background-color: $bgColor;
+        background-repeat: no-repeat;
+		background-size: contain;
+		padding: 0 1rem;
+	}
+
+
+	.general__button {
+		font-family: $mainFont;
+		font-size: 18px;
+		background-color: $battonColor;
+		padding: 0.99rem 1.5rem;
+		border-radius: 30px;
+	}
