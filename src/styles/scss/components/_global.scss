@@ -3,20 +3,26 @@ html {
 	scroll-behavior: smooth;
 }
 
+.wrapper {
+	background-image: url(../../assets/image/pictures/Background_elements.png);
+	background-color: $bgColor;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 
-    .wrapper{
-		background-image: url(../../assets/image/pictures/Background_elements.png);
-		background-color: $bgColor;
-        background-repeat: no-repeat;
-		background-size: contain;
-		padding: 0 1rem;
+.general__button {
+	font-family: $mainFont;
+	font-size: 18px;
+	background-color: $battonColor;
+	padding: 0.99rem 1.5rem;
+	border-radius: 30px;
+	cursor: pointer;
+	&::after {
+		content: url(../../../../src/assets/image/icons/Vector-pointer.png);
 	}
-
-
-	.general__button {
-		font-family: $mainFont;
-		font-size: 18px;
-		background-color: $battonColor;
-		padding: 0.99rem 1.5rem;
-		border-radius: 30px;
-	}
+}
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
