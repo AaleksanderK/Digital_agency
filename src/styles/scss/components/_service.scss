@@ -1,0 +1,85 @@
+.service-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6rem 0 2rem;
+	// .service-title__text
+	&__text {
+		font-family: $mainFont;
+		font-weight: 700;
+		font-size: 48px;
+		color: $textColor;
+		max-width: 19.1rem;
+	}
+}
+
+.service-frames {
+	display: flex;
+}
+.left {
+	// .left__top-card
+
+	&__top-card {
+		width: 555px;
+		height: 526px;
+		background-color: $sectionColor;
+		border-radius: 50px 0px 0px 0px;
+		margin: 0 1.5rem 1.5rem 0;
+		padding: 4.5rem 1rem;
+	}
+
+	// .left__bottom-card
+
+	&__bottom-card {
+		width: 555px;
+		height: 526px;
+		background-color: $sectionColor;
+		border-radius: 0px 0px 0px 50px;
+		padding: 4.5rem 1rem;
+	}
+}
+.right {
+	// .right__top-card
+
+	&__top-card {
+		max-width: 555px;
+		height: 526px;
+		background-color: $sectionColor;
+		border-radius: 0px 50px 0px 0px;
+		margin: 1.5rem 1.5rem 1.5rem 0;
+		padding: 4.5rem 1rem;
+	}
+
+	// .right__bottom-card
+
+	&__bottom-card {
+		width: 555px;
+		height: 526px;
+		background-color: $sectionColor;
+		border-radius: 0px 0px 50px 0px;
+		padding: 4.5rem 1rem;
+	}
+}
+
+.card {
+	padding: 1rem;
+	// .top-card__title
+
+	&__title {
+		font-family: $mainFont;
+		font-weight: 700;
+		font-size: 30px;
+		color: $textColor;
+		padding: 1rem 0;
+	}
+
+	// .top-card__paragraph
+
+	&__paragraph {
+		font-family: $mainFont;
+		font-size: 16px;
+		color: $textColor;
+		line-height: 30px;
+		padding: 0 0 2rem;
+	}
+}

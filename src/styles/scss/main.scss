@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import '../scss/config/reset';
+@import '../scss/config/normalize';
 @import '../scss/variables/var';
 @import '../scss/components/global';
 @import '../scss/components/header';
@@ -8,3 +9,4 @@
 @import '../scss/components/photo-frames';
 @import '../scss/components/approach';
 @import '../scss/components/service';
+@import '../scss/components/projects.scss';
