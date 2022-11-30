@@ -20,10 +20,13 @@ html {
 	border-radius: 30px;
 	cursor: pointer;
 	&::after {
-		content: url();
-		color: $textColor;
+		content: "↗";
+		width: 10px;
+		height: 10px;
+		display: inline-block;
+		padding-left: 0.5rem;
 	}
-	&:hover{
+	&:hover {
 		background-color: $battonColor;
 		color: $bgColor;
 	}
@@ -33,4 +36,3 @@ html {
 	margin: 0 auto;
 	padding: 0 15px;
 }
-

@@ -1,0 +1,56 @@
+.blog__title {
+	font-family: $mainFont;
+	font-weight: 700;
+	font-size: 48px;
+	color: $textColor;
+	padding: 6rem 0 2.4rem;
+}
+
+.blog-cards {
+	display: flex;
+	// .blog-cards__blog-card
+
+	&__blog-card {
+		padding: 0 0.7rem;
+	}
+}
+.blog-card {
+	// .blog-card__comfort-at-work
+
+	&__blog-image {
+		border-radius: 50px;
+        margin: 0 0 1.45rem;
+	}
+
+	// .blog-card__badge
+
+	&__badge {
+		font-family: $mainFont;
+		font-weight: 500;
+		font-size: 12px;
+		padding: 5px 12px;
+		background-color: $textColor;
+		border-radius: 36px;
+	}
+
+	// .blog-card__name-data
+
+	&__name-data {
+		font-family: $mainFont;
+		font-weight: 500;
+		font-size: 16px;
+		color: $textColor;
+        padding: 0.8rem 0;
+	}
+
+	// .blog-card__title
+
+	&__title {
+		font-family: $mainFont;
+		font-weight: 700;
+		font-size: 30px;
+		color: $textColor;
+        padding: 0 0 1.45rem;
+	}
+}
+
