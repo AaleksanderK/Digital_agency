@@ -4,7 +4,7 @@ html {
 }
 
 .wrapper {
-	background-image: url(../../assets/image/pictures/Background_elements.png);
+	background-image: url(../../../../src/assets/image/icons/Background\ elements.svg);
 	background-color: $bgColor;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -13,12 +13,19 @@ html {
 .general__button {
 	font-family: $mainFont;
 	font-size: 18px;
-	background-color: $battonColor;
+	background-color: transparent;
+	border: 1px solid $textColor;
+	color: $textColor;
 	padding: 0.99rem 1.5rem;
 	border-radius: 30px;
 	cursor: pointer;
 	&::after {
-		content: url(../../../../src/assets/image/icons/Vector-pointer.png);
+		content: url();
+		color: $textColor;
+	}
+	&:hover{
+		background-color: $battonColor;
+		color: $bgColor;
 	}
 }
 .container {
@@ -26,3 +33,4 @@ html {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+

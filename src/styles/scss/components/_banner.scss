@@ -1,6 +1,7 @@
 .banner-inform {
 	position: relative;
-	display: flex;
+	// display: flex;
+	padding-left: 25%;
 	justify-content: center;
 	// .banner-inform__world-class
 	&__world-class {
@@ -18,19 +19,26 @@
 		font-family: $mainFont;
 		font-size: 24px;
 		color: $textColor;
-		padding: 2rem 0 2rem 4.5rem;
+		// padding: 2rem 0 2rem 4.9rem;
 	}
 }
 .danner-text {
 	// .danner-text__title
-
+position: relative;
 	&__title {
 		font-family: $mainFont;
 		font-weight: 700;
 		font-size: 150px;
 		line-height: 182px;
 		color: $textColor;
-		padding: 0 0 0 5rem;
+		padding: 0 0 0 8rem;
+
+		&::before{
+			content: url(../../../../src/assets/image/icons/world_class.png);
+			display: inline-block;
+			position: absolute;
+			left: 20%;
+		}
 	}
 }
 
@@ -40,13 +48,13 @@
 		font-size: 150px;
 		line-height: 182px;
 		color: $textColor;
-		padding: 0 0 0 5rem;
+		// padding: 0 0 0 3rem;
 
 }
 
 .banner-text-container{
     display: flex;
-    
+    position: relative;
 }
 
 
@@ -55,18 +63,22 @@
 .banner-text__dotted-line {
 	position: absolute;
 	top: 0;
-	right: 0;
-    
+    left: 44%;
 }
 
 .banner-text__development{
-    float: right;
+    // float: right;
     max-width: 466px;
     max-height: 475px;
-    border-radius: 51px;
+    border-radius: 60px;
+	position: relative;
+	top: 3rem;
 }
 .banner-text__perfomance{
-    float: left;
-    width: 241px;
-    height: 307px;
+    max-width: 241px;
+    max-height: 307px;
+	border-radius: 30px;
+	float: left;
+	position: relative;
+	left: -16rem;
 }
