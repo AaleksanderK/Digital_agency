@@ -429,6 +429,25 @@ html {
   padding: 0 15px;
 }
 
+.wp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+}
+
+.laptop-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .header-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -685,10 +704,13 @@ html {
   z-index: 0;
 }
 
-.approach-container {
-  width: 100%;
+.approach {
   background: -webkit-gradient(linear, left top, right top, color-stop(40%, #FEC83E), color-stop(40%, #353F5B));
   background: linear-gradient(to right, #FEC83E 40%, #353F5B 40%);
+}
+
+.approach-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,7 +997,7 @@ html {
   display: flex;
 }
 .blog-cards__blog-card {
-  padding: 0 0.7rem;
+  padding: 0 0.7rem 6rem;
 }
 
 .blog-card__blog-image {
@@ -1003,4 +1025,128 @@ html {
   font-size: 30px;
   color: #F8F8F8;
   padding: 0 0 1.45rem;
+}
+
+.main-footer {
+  background-color: #353F5B;
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-requisites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+}
+
+.footer__form {
+  padding: 80px 48px;
+  background-color: #FEC83E;
+  border-radius: 30px;
+  margin-top: 2.4rem;
+}
+
+.form__dotes-colum {
+  max-width: 19px;
+  max-height: 83px;
+}
+.form__dotes-colum-horizon {
+  position: relative;
+  top: -65px;
+}
+.form__form-title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0 0 1rem;
+}
+.form__email {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #172048;
+  width: 100%;
+}
+.form__email:focus {
+  outline: none;
+}
+.form__email::after {
+  content: ">";
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+}
+
+.requisites-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards__inform {
+  padding: 2.5rem;
+}
+
+.inform__title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+  color: #F8F8F8;
+  padding: 0 0 0.8rem;
+}
+.inform__street {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #F8F8F8;
+  max-width: 200px;
+}
+.inform__phone {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #F8F8F8;
+  padding: 0 0 0.8rem;
+}
+.inform__contact-email {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #F8F8F8;
+}
+
+.footer-additions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.4rem 0;
+}
+
+.rights__title {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #F8F8F8;
+}
+
+.privacy__title {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #F8F8F8;
+}
+
+.dotes-column {
+  position: absolute;
+  left: 4rem;
+  top: 1rem;
 }
