@@ -41,12 +41,17 @@
 		}
 	}
 }
-
+.reviews-card-user{
+	display: flex;
+	justify-content: space-between;
+}
 .user {
 	&__photo {
 		border-radius: 50px;
 		float: left;
 		margin-right: 0.8rem;
+		width: 70px;
+		height: 70px;
 	}
 
 	&__name {
@@ -54,11 +59,43 @@
 		font-size: 18px;
 		color: $textColor;
 		padding: 0.5rem;
+		width: 255px;
 	}
 
 	&__profession {
 		font-family: $mainFont;
 		font-size: 16px;
 		color: $battonColor;
+	}
+}
+@media (max-width: 500px) {
+	.reviews__title {
+		font-size: 24px;
+		padding: 6rem 0rem 2.4rem;
+	}
+	.reviews-cards__reviews-card-left {
+		margin: 0 1.6rem 20px 1.3rem;
+	}
+	.reviews-card {
+		&__paragraph {
+			color: $textColor;
+			width: 265px;
+			padding: 2rem 0;
+		}
+		&__pointer {
+			&::after {
+				content: url(../../../../src/assets/image/icons/Vector-pointer-left.png);
+				display: block;
+				position: absolute;
+				top: 45%;
+				left: -3.5%;
+			}
+		}
+	}
+	.reviews-card-user{
+flex-direction: column;
+	}
+	.user__stars{
+		padding-left: 80px;
 	}
 }
