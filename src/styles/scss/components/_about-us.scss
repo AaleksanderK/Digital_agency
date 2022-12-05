@@ -1,17 +1,14 @@
 .about-us-container {
 	padding: 0 1rem;
 
-	// .about-us-container__content
-
 	&__content {
 		display: flex;
 		justify-content: center;
-		padding: 3rem 0;
+		padding: 5rem 0 3rem;
 	}
 }
 .content-text {
 	padding: 0 2rem;
-	// .content-text__title
 
 	&__title {
 		font-family: $mainFont;
@@ -23,8 +20,6 @@
 		max-width: 438px;
 		padding: 0 0 2rem;
 	}
-
-	// .content-text__paragraph
 
 	&__paragraph {
 		font-family: $mainFont;
@@ -38,28 +33,51 @@
 .fan-facts {
 	display: flex;
 	justify-content: space-evenly;
-    padding: 0 0 4rem;
-    max-width: 966px;
-    margin: 0 auto;
+	padding: 0 0 4rem;
+	max-width: 966px;
+	margin: 0 auto;
 }
 
 .fan-fact {
-	// .fan-fact__title
-
 	&__title {
 		font-family: $mainFont;
 		color: $textColor;
 		font-weight: 700;
 		font-size: 48px;
-        text-align: center;
+		text-align: center;
 	}
-
-	// .fan-fact__subtitle
 
 	&__subtitle {
 		font-family: $mainFont;
 		color: $textColor;
 		font-size: 20px;
-        text-align: center;
+		text-align: center;
+	}
+}
+@media (max-width: 800px) {
+	.about-us-container {
+	
+		&__content {
+			flex-direction: column;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.content-text {
+		padding: 0 2rem;
+	
+		&__title {
+			font-size: 24px;
+			line-height: 29px;
+		}
+	}
+	.fan-facts {
+		flex-direction: column;
+		padding: 0;
+	}
+	.fan-facts__fact{
+		padding-bottom: 60px;
+
 	}
 }

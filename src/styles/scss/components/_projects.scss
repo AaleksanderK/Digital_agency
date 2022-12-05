@@ -3,7 +3,6 @@
 	flex-direction: column;
 	align-items: center;
 	padding: 6rem 0 2.4rem;
-	// .work-title__text
 
 	&__text {
 		font-family: $mainFont;
@@ -12,15 +11,11 @@
 		color: $textColor;
 	}
 
-	// .work-title__navigation
-
 	&__navigation {
 		display: flex;
 		justify-content: space-between;
 		width: 43%;
 	}
-
-	// .work-title__navigation-link
 
 	&__navigation-link {
 		font-family: $mainFont;
@@ -36,14 +31,11 @@
 .projects {
 	display: flex;
 
-	// .projects__card-image
-
 	&__card-image {
 		border-radius: 50px;
 		padding: 0 0.7rem;
+		width: 100%;
 	}
-
-	// .projects__card-title
 
 	&__card-title {
 		font-family: $mainFont;
@@ -53,8 +45,6 @@
 		padding: 1.3rem 0.8rem;
 		max-width: 19.65rem;
 	}
-
-	// .projects__card-paragraph
 
 	&__card-paragraph {
 		font-family: $mainFont;

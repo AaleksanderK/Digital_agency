@@ -44,8 +44,6 @@ left: 55%;
 	border-radius: 0px 50px 0px 0px;
 	margin-bottom: 1.1rem;
 z-index: 1;
-
-
 }
 .left-frame__meeting{
 	max-width: 264px;
@@ -59,6 +57,45 @@ z-index: 1;
 	max-height: 168px;
 	position: absolute;
 bottom: 0;
-left: 80%;
+left: 83%;
 z-index: 0;
+}
+
+@media (max-width: 1000px) {
+	.left-frame__cercle-line{
+	left: 75%;
+	z-index: 0;
+	}
+	.left-frame__presentation{
+		max-width: 100%;
+
+	}
+	.left-frame__accord{
+		max-width: 100%;
+
+	}
+	.left-frame__development {
+		max-width: 100%;
+	}
+	.left-frame__meeting{
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 800px) {
+	.photo-frames {
+		padding: 2rem;
+	}
+	.left-frame__cercle-line{
+		left: 65%;
+		z-index: 0;
+		}
+}
+@media (max-width: 800px) {
+	.left-frame__cercle-line{
+		max-width: 89px;
+		max-height: 86px;
+bottom: 20px;
+
+	}
 }

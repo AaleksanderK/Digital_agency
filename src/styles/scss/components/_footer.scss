@@ -1,21 +1,17 @@
-.main-footer{
+.main-footer {
 	background-color: $sectionColor;
-
 }
 .footer-container {
-    max-width: 1440px;
+	max-width: 1440px;
 	margin: 0 auto;
-
 }
 .footer-requisites {
 	display: flex;
 	justify-content: space-evenly;
 	position: relative;
+	padding: 0 1rem;
 }
 .footer {
-    
-	// .footer__form
-
 	&__form {
 		padding: 80px 48px;
 		background-color: $battonColor;
@@ -24,39 +20,22 @@
 	}
 }
 .form {
-    
-	// .form__dotes-colum
-
 	&__dotes-colum {
 		max-width: 19px;
 		max-height: 83px;
-		// position: relative;
-		// top: 10;
-		// left: 0rem;
 	}
-
-	// .form__dotes-colum-horizon
 
 	&__dotes-colum-horizon {
-		// max-width: 19px;
-		// max-height: 83px;
-		// transform: rotate(90deg);
 		position: relative;
 		top: -65px;
-		// left: 7.7rem;
-        
 	}
-
-	// .form__form-title
 
 	&__form-title {
 		font-family: $mainFont;
 		font-weight: 600;
 		font-size: 20px;
-        padding: 0 0 1rem;
+		padding: 0 0 1rem;
 	}
-
-	// .form__email
 
 	&__email {
 		background-color: transparent;
@@ -80,15 +59,11 @@
 	align-items: center;
 }
 .cards {
-	// .cards__inform
-
 	&__inform {
 		padding: 2.5rem;
 	}
 }
 .inform {
-	// .inform__title
-
 	&__title {
 		font-family: $mainFont;
 		font-weight: 600;
@@ -97,16 +72,12 @@
 		padding: 0 0 0.8rem;
 	}
 
-	// .inform__street
-
 	&__street {
 		font-family: $mainFont;
 		font-size: 16px;
 		color: $textColor;
 		max-width: 200px;
 	}
-
-	// .inform__phone
 
 	&__phone {
 		font-family: $mainFont;
@@ -115,8 +86,6 @@
 		padding: 0 0 0.8rem;
 	}
 
-	// .inform__contact-email
-
 	&__contact-email {
 		font-family: $mainFont;
 		font-size: 16px;
@@ -124,58 +93,42 @@
 	}
 }
 .footer-additions {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2.4rem 0;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2.4rem 1rem;
 }
 .rights {
-
-		// .rights__title
-
-		&__title {
-            font-family: $mainFont;
+	&__title {
+		font-family: $mainFont;
 		font-size: 16px;
 		color: $textColor;
-		}
+	}
 }
 
 .privacy {
-
-		// .privacy__title
-
-		&__title {
-            font-family: $mainFont;
+	&__title {
+		font-family: $mainFont;
 		font-size: 16px;
 		color: $textColor;
-		}
+	}
 }
 
 .social-link {
-	
-		// .social-link__twitter
+	&__twitter {
+	}
 
-		&__twitter {
-			
-		}
+	&__facebook {
+	}
 
-		// .social-link__facebook
+	&__dribbble {
+	}
 
-		&__facebook {
-		}
-
-		// .social-link__dribbble
-
-		&__dribbble {
-		}
-
-		// .social-link__github
-
-		&__github {
-		}
+	&__github {
+	}
 }
-.dotes-column{
+.dotes-column {
 	position: absolute;
 	left: 4rem;
 	top: 1rem;

@@ -8,21 +8,17 @@
 
 .blog-cards {
 	display: flex;
-	// .blog-cards__blog-card
 
 	&__blog-card {
 		padding: 0 0.7rem 6rem;
 	}
 }
 .blog-card {
-	// .blog-card__comfort-at-work
-
 	&__blog-image {
 		border-radius: 50px;
-        margin: 0 0 1.45rem;
+		margin: 0 0 1.45rem;
+		width: 100%;
 	}
-
-	// .blog-card__badge
 
 	&__badge {
 		font-family: $mainFont;
@@ -31,26 +27,25 @@
 		padding: 5px 12px;
 		background-color: $textColor;
 		border-radius: 36px;
+		cursor: pointer;
+		&:hover{
+			color: $battonColor;
+		}
 	}
-
-	// .blog-card__name-data
 
 	&__name-data {
 		font-family: $mainFont;
 		font-weight: 500;
 		font-size: 16px;
 		color: $textColor;
-        padding: 0.8rem 0;
+		padding: 0.8rem 0;
 	}
-
-	// .blog-card__title
 
 	&__title {
 		font-family: $mainFont;
 		font-weight: 700;
 		font-size: 30px;
 		color: $textColor;
-        padding: 0 0 1.45rem;
+		padding: 0 0 1.45rem;
 	}
 }
-

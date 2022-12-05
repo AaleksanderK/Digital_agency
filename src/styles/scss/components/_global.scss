@@ -3,13 +3,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-.wrapper {
-	background-image: url(../../../../src/assets/image/icons/Background\ elements.svg);
-	background-color: $bgColor;
-	background-repeat: no-repeat;
-	background-size: contain;
-	
-}
 
 .general__button {
 	font-family: $mainFont;
@@ -37,14 +30,20 @@ html {
 	margin: 0 auto;
 	padding: 0 15px;
 }
-.wp{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100vh;
-}
-.laptop-container {
+
+.main-container {
     max-width: 1440px;
 	margin: 0 auto;
+	padding: 0 15px;
 
+}
+@media (max-width: 1000px) {
+	html {
+		font-size: 13.5px;
+	}
+}
+@media (max-width: 500px) {
+	html {
+		font-size: 13.5px;
+	}
 }
