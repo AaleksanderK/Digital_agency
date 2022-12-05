@@ -446,6 +446,32 @@ html {
   html {
     font-size: 13.5px;
   }
+  .pagination {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FEC83E;
+    position: relative;
+    margin: 0 auto;
+  }
+  .pagination::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+    position: absolute;
+    left: 40px;
+  }
+  .pagination::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+    position: absolute;
+    right: 40px;
+  }
 }
 .header-item {
   display: -webkit-box;
@@ -1160,32 +1186,6 @@ html {
   .right__bottom-card {
     display: none;
   }
-  .service__pagination {
-    width: 20px;
-    height: 20px;
-    background-color: #FEC83E;
-    border-radius: 50%;
-    margin: 0 auto;
-    position: relative;
-  }
-  .service__pagination::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-color: #F8F8F8;
-    border-radius: 50%;
-    position: absolute;
-    left: 40px;
-  }
-  .service__pagination::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-color: #F8F8F8;
-    border-radius: 50%;
-    position: absolute;
-    right: 40px;
-  }
   .general__button-service {
     border: none;
     color: #FEC83E;
@@ -1264,6 +1264,43 @@ html {
           justify-content: center;
 }
 
+@media (max-width: 500px) {
+  .work-title__text {
+    font-size: 24px;
+  }
+  .work-title__navigation {
+    width: 100%;
+    overflow: hidden;
+  }
+  .work-title__navigation-link:nth-child(2) {
+    color: #FEC83E;
+  }
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+  }
+  .projects__card-image {
+    border-radius: 50px;
+    padding: 0 0.7rem;
+    width: 100%;
+  }
+  .projects__card-title {
+    display: none;
+  }
+  .projects__card-paragraph {
+    display: none;
+  }
+  .projects__button {
+    display: none;
+  }
+  .projects__card-image {
+    height: 295px;
+    width: 327px;
+    margin-bottom: 20px;
+  }
+}
 .reviews {
   position: relative;
 }
