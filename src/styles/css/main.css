@@ -1128,6 +1128,69 @@ html {
   padding: 0 0 2rem;
 }
 
+@media (max-width: 500px) {
+  .service-title__text {
+    font-size: 24px;
+  }
+  .service-frames {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card {
+    padding: 1rem;
+  }
+  .card__title {
+    font-size: 20px;
+  }
+  .card__paragraph {
+    max-width: 245px;
+  }
+  .left__top-card {
+    padding: 4.2rem 6rem;
+    border-radius: 50px;
+  }
+  .left__bottom-card {
+    display: none;
+  }
+  .right__top-card {
+    display: none;
+  }
+  .right__bottom-card {
+    display: none;
+  }
+  .service__pagination {
+    width: 20px;
+    height: 20px;
+    background-color: #FEC83E;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .service__pagination::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #F8F8F8;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+  }
+  .service__pagination::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #F8F8F8;
+    border-radius: 50%;
+    position: absolute;
+    right: 40px;
+  }
+  .general__button-service {
+    border: none;
+    color: #FEC83E;
+  }
+}
 .work-title {
   display: -webkit-box;
   display: -ms-flexbox;
