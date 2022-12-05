@@ -28,7 +28,7 @@
 		background-color: $textColor;
 		border-radius: 36px;
 		cursor: pointer;
-		&:hover{
+		&:hover {
 			color: $battonColor;
 		}
 	}
@@ -47,5 +47,43 @@
 		font-size: 30px;
 		color: $textColor;
 		padding: 0 0 1.45rem;
+	}
+}
+@media (max-width: 500px) {
+	.blog__title {
+		font-size: 24px;
+	}
+	.blog-cards {
+		overflow: hidden;
+		&__blog-card {
+			padding: 0 0.7rem 20px;
+		}
+	}
+	.blog-card {
+		&__blog-image {
+			border-radius: 50px;
+			margin: 0 0 1.45rem;
+			width: 327px;
+		}
+
+		&__badge {
+			margin-left: 120px;
+		}
+
+		&__name-data {
+			text-align: center;
+		}
+
+		&__title {
+			font-size: 20px;
+			text-align: center;
+			line-height: 38px;
+		}
+	}
+	.general__button-blog {
+		margin-left: 90px;
+	}
+	.pagination-blog {
+		margin-bottom: 80px;
 	}
 }

@@ -1382,9 +1382,10 @@ html {
     padding: 6rem 0rem 2.4rem;
   }
   .reviews-cards__reviews-card-left {
-    margin: 0 1.6rem 20px 1.3rem;
+    margin: 0 1.6rem 20px 0.5rem;
   }
   .reviews-card__paragraph {
+    line-height: 30px;
     color: #F8F8F8;
     width: 265px;
     padding: 2rem 0;
@@ -1394,7 +1395,7 @@ html {
     display: block;
     position: absolute;
     top: 45%;
-    left: -3.5%;
+    left: -4.5%;
   }
   .reviews-card-user {
     -webkit-box-orient: vertical;
@@ -1404,6 +1405,9 @@ html {
   }
   .user__stars {
     padding-left: 80px;
+  }
+  .reviews-card__icon-quote {
+    padding-left: 100px;
   }
 }
 .blog__title {
@@ -1455,6 +1459,39 @@ html {
   padding: 0 0 1.45rem;
 }
 
+@media (max-width: 500px) {
+  .blog__title {
+    font-size: 24px;
+  }
+  .blog-cards {
+    overflow: hidden;
+  }
+  .blog-cards__blog-card {
+    padding: 0 0.7rem 20px;
+  }
+  .blog-card__blog-image {
+    border-radius: 50px;
+    margin: 0 0 1.45rem;
+    width: 327px;
+  }
+  .blog-card__badge {
+    margin-left: 120px;
+  }
+  .blog-card__name-data {
+    text-align: center;
+  }
+  .blog-card__title {
+    font-size: 20px;
+    text-align: center;
+    line-height: 38px;
+  }
+  .general__button-blog {
+    margin-left: 90px;
+  }
+  .pagination-blog {
+    margin-bottom: 80px;
+  }
+}
 .main-footer {
   background-color: #353F5B;
 }
