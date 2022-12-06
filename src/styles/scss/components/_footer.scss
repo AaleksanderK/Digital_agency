@@ -117,19 +117,69 @@
 
 .social-link {
 	&__twitter {
+		padding: 0 13.5px;
 	}
 
 	&__facebook {
+		padding: 0 13.5px;
+
 	}
 
 	&__dribbble {
+		padding: 0 13.5px;
+
 	}
 
 	&__github {
+		padding: 0 13.5px;
+
 	}
 }
 .dotes-column {
 	position: absolute;
 	left: 4rem;
 	top: 1rem;
+}
+@media (max-width: 500px) {
+	.footer-requisites {
+		flex-direction: column;
+	}
+	.requisites-cards {
+		flex-direction: column;
+	}
+	.inform {
+		&__title {
+			text-align: center;
+		}
+	
+		&__street {
+			text-align: center;
+
+		}
+	
+		&__phone {
+			text-align: center;
+
+		}
+	
+		&__contact-email {
+			text-align: center;
+
+		}
+	}
+	.additions-rights{
+		display: none;
+	}
+	.footer-additions {
+		flex-direction: column;
+		align-items: center;
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 2.4rem 1rem;
+	}
+	.privacy {
+		&__title {
+			padding-bottom: 20px;
+		}
+	}
 }

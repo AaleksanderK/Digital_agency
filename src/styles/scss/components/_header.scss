@@ -20,7 +20,7 @@
 	}
 }
 .header-item__burger-menu {
-	width: 16px;
+	width: 16.5px;
 	height: 1px;
 	background-color: $textColor;
     position: relative;
@@ -41,3 +41,10 @@
         position: absolute;
 	}
 }
+
+@media (max-width: 500px) {
+	.header-navigation {
+		display: none;
+	}
+}
+

@@ -2,14 +2,12 @@
 	display: flex;
 	position: relative;
 
-	// .photo-frames__left-frame
 
 	&__left-frame {
 		display: flex;
 		flex-direction: column;
 	}
 
-	// .photo-frames__right-frame
 
 	&__right-frame {
 		display: flex;
