@@ -1321,7 +1321,7 @@ html {
   font-weight: 700;
   font-size: 48px;
   color: #F8F8F8;
-  padding: 6rem 14rem 2.4rem;
+  padding: 6rem 7rem 2.4rem;
 }
 
 .reviews-cards {
@@ -1340,7 +1340,7 @@ html {
 }
 
 .reviews-cards__reviews-card-left {
-  margin: 0 1.6rem 0 14rem;
+  margin: 0 1.6rem 0 7rem;
 }
 
 .reviews-card__paragraph {
