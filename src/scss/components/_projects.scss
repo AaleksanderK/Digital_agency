@@ -22,10 +22,13 @@
 		font-size: 16px;
 		color: $textColor;
 		padding: 1.2rem 0 0;
+		transition: 0.5s;
 		cursor: pointer;
+		
 		&:hover {
 			color: $battonColor;
 		}
+	
 	}
 }
 .projects {
@@ -57,8 +60,28 @@
 	display: flex;
 	justify-content: center;
 }
+@media (max-width: 1000px) {
+	.work-title {
+		overflow: hidden;
+
+		&__text {
+			font-size: 24px;
+		}
+
+		&__navigation {
+			width: 60%;
+		}
+
+		&__navigation-link {
+padding:32px 0 0 25px;
+		}	
+	}
+}
+
 @media (max-width: 500px) {
 	.work-title {
+		padding: 4rem 0 2.4rem;
+
 		&__text {
 			font-size: 24px;
 		}
@@ -69,18 +92,16 @@
 		}
 
 		&__navigation-link {
-			&:nth-child(2) {
-				color: $battonColor;
-			}
-		}
+padding:32px 0 0 25px;		
 	}
+}
 	.projects {
 		display: flex;
 		overflow: hidden;
 		&__card-image {
 			border-radius: 50px;
 			padding: 0 0.7rem;
-			width: 100%;
+			width: 100%;	
 		}
 
 		&__card-title {
@@ -96,7 +117,8 @@
 	}
 	.projects__card-image {
 		height: 295px;
-		width: 327px;
+		width: 300px;
 margin-bottom: 20px;
 	}
 }
+

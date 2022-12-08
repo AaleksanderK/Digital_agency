@@ -14,6 +14,7 @@
 		color: $textColor;
 		text-decoration: none;
 		padding: 1.25rem;
+		transition: 0.5s;
 		&:hover{
 			color: $battonColor;
 		}

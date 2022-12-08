@@ -27,6 +27,8 @@
 		padding: 5px 12px;
 		background-color: $textColor;
 		border-radius: 36px;
+	transition: 0.5s;
+
 		cursor: pointer;
 		&:hover {
 			color: $battonColor;
@@ -38,7 +40,7 @@
 		font-weight: 500;
 		font-size: 16px;
 		color: $textColor;
-		padding: 0.8rem 0;
+		padding: 1rem 0;
 	}
 
 	&__title {
@@ -52,6 +54,8 @@
 @media (max-width: 500px) {
 	.blog__title {
 		font-size: 24px;
+		padding: 4rem 0rem 2.4rem;
+
 	}
 	.blog-cards {
 		overflow: hidden;
@@ -63,15 +67,18 @@
 		&__blog-image {
 			border-radius: 50px;
 			margin: 0 0 1.45rem;
-			width: 327px;
+			min-width: 327px;
+			height: 184px;
 		}
 
 		&__badge {
-			margin-left: 120px;
+			margin-left: 34%;
 		}
 
 		&__name-data {
 			text-align: center;
+		padding: 1.5rem 0;
+			
 		}
 
 		&__title {
@@ -85,5 +92,23 @@
 	}
 	.pagination-blog {
 		margin-bottom: 80px;
+	}
+}
+@media (max-width: 320px) {
+	.blog-card {
+		&__blog-image {
+			min-width: 280px;
+		}
+
+		&__badge {
+			margin-left: 30%;
+		}
+
+	}
+	.general__button-blog {
+		margin-left: 60px;
+	}
+	.pagination-blog {
+		margin-bottom: 60px;
 	}
 }

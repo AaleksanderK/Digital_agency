@@ -28,7 +28,7 @@
 		font-weight: 700;
 		font-size: 150px;
 		color: $textColor;
-		padding: 0 0 0 4rem;
+		padding: 0 0 0 3rem;
 	}
 }
 .banner-text {
@@ -44,7 +44,7 @@
 	}
 }
 .banner-text__world-class {
-	max-width: 240px;
+	max-width: 200px;
 	float: left;
 }
 .banner-text-container {
@@ -58,50 +58,54 @@
 		position: absolute;
 		background-size: contain;
 		background-repeat: no-repeat;
-		bottom:10%;
+		bottom: 10%;
 		z-index: 11;
 		width: 150px;
 		height: 150px;
 		backdrop-filter: blur(25px);
 		border-radius: 50%;
-		
 	}
 }
 .banner-text__development {
-	width: 30vw;
+	width: 375px;
 	position: relative;
 	top: -110px;
-	right: -5rem;
+	right: -1rem;
 	border-radius: 65px;
-	
 }
-.banner-text__scroll-down{
+.banner-text__scroll-down {
 	font-family: $mainFont;
-		font-size: 14px;
-		color: $textColor;
-		text-decoration: none;
-		display: block;
-		transform: rotate(270deg);
-		position: relative;
-		top: -5rem;
-		left: 6rem;
-		&::before{
-			content: "◀";
-			display: inline-block;
-			padding: 0 5px;
-		}
+	font-size: 14px;
+	color: $textColor;
+	text-decoration: none;
+	display: block;
+	transform: rotate(270deg);
+	position: relative;
+	top: -5rem;
+	left: 0px;
+	transition: 0.5s;
+	cursor: pointer;
+
+	&:hover {
+		color: $battonColor;
+	}
+	&::before {
+		content: "◀";
+		display: inline-block;
+		padding: 0 5px;
+	}
 }
 
-.banner-text__perfomance-img{
+.banner-text__perfomance-img {
 	position: absolute;
 
 	top: 6.5rem;
-	left: -16rem;
+	left: -14rem;
 	border-radius: 30px;
 	z-index: 1;
-	width: 15vw;
+	max-width: 241px;
 }
-.banner-text__perfomance-circle{
+.banner-text__perfomance-circle {
 	position: absolute;
 	left: -5.5rem;
 	top: 18rem;
@@ -131,62 +135,52 @@
 		float: left;
 	}
 	.banner-text__development {
-		width: 30vw;
+		width: 300px;
 		position: relative;
 		top: 20px;
 		right: 2rem;
 		border-radius: 65px;
-		
 	}
 	.banner-text-container {
-		margin-left: 25%;
+		margin: 0 0 25% 5%;
 		&::before {
 			content: "";
 			background-image: url(../../../../src/assets/image/icons/play\ video.svg);
-			bottom:-70px;
+			bottom: -70px;
 			width: 120px;
 			height: 120px;
 			right: 20px;
 		}
 	}
-	.banner-text__perfomance-img{
-	position: static;
-	
-	top: 6rem;
-	left: 0rem;
-	border-radius: 30px;
-	z-index: 1;
-	width: 15vw;
-}
-.banner-text__perfomance-circle{
-	position: absolute;
-	left: -5.5rem;
-	top: 18rem;
-	z-index: 0;
-	width: 9vw;
-}
-.banner-text__perfomance-img{
-	position: absolute;
-	top: 9.5rem;
-	left: -12rem;
-	width: 15vw;
-}
-.banner-text__perfomance-circle{
-	position: absolute;
-	left: -5.5rem;
-	top: 18rem;
-	z-index: 0;
-	width: 9vw;
-}
-}
 
+	.banner-text__perfomance-img {
+		position: absolute;
+		top: 14.5rem;
+		left: 0rem;
+		width: 24vw;
+	}
+	.banner-text__perfomance-circle {
+		position: absolute;
+		left: 11rem;
+		top: 29rem;
+		z-index: 0;
+		width: 12vw;
+	}
+	.banner-text__scroll-down {
+		position: relative;
+		left: 25%;
+		top: 5%;
+	}
+}
 
 @media (max-width: 500px) {
 	.banner-text {
 		&__title {
 			font-size: 70px;
 			&::after {
-				left: 30%;
+				left: -30%;
+				top: 2.5%;
+				width: 340px;
 			}
 		}
 		&__title-sub {
@@ -208,13 +202,13 @@
 		max-width: 100px;
 	}
 	.banner-text__development {
-		width: 80vw;
+		width: 270px;
 		position: static;
 		margin-bottom: 3rem;
 	}
 	.banner-text-container {
 		flex-direction: column;
-		margin-left: 10%;
+		margin: 0 0 0 10%;
 		&::before {
 			content: "";
 			background-image: url(../../../../src/assets/image/icons/play\ video.svg);
@@ -224,22 +218,21 @@
 			right: 20px;
 		}
 	}
-.banner-text__scroll-down{
-	display: none;
-}
-.general__button-baner{
-	display: none;
-}
-.banner-text__perfomance-img{
-	position: static;
-	width: 41vw;
-}
-.banner-text__perfomance-circle{
-	position: absolute;
-	left: 9rem;
-	top: 560px;
-	z-index: 0;
-	width: 19vw;
-}
-
+	.banner-text__scroll-down {
+		display: none;
+	}
+	.general__button-baner {
+		display: none;
+	}
+	.banner-text__perfomance-img {
+		position: static;
+		width: 41vw;
+	}
+	.banner-text__perfomance-circle {
+		position: absolute;
+		left: 7rem;
+		top: 560px;
+		z-index: 0;
+		width: 19vw;
+	}
 }

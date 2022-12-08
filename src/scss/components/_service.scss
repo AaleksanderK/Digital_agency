@@ -17,36 +17,39 @@
 }
 .left {
 	&__top-card {
-		max-width: 95%;
+		// max-width: 95%;
 
 		background-color: $sectionColor;
 		border-radius: 50px 0px 0px 0px;
-		margin: 0 1.5rem 1.5rem 0;
+		margin: 0 0.7rem 1.5rem 0;
 		padding: 4.2rem 1rem;
 	}
 
 	&__bottom-card {
-		max-width: 95%;
+		// max-width: 95%;
 		background-color: $sectionColor;
 		border-radius: 0px 0px 0px 50px;
 		padding: 4.2rem 1rem;
+		margin: 0 0.7rem 1.5rem 0;
+
 	}
 }
 .right {
 	&__top-card {
-		max-width: 95%;
+		// max-width: 100%;
 
 		background-color: $sectionColor;
 		border-radius: 0px 50px 0px 0px;
-		margin: 1.5rem 0;
+		margin: 1.5rem 0 1.5rem 0.7rem;
 		padding: 4.2rem 1rem;
 	}
 
 	&__bottom-card {
-		max-width: 95%;
+		// max-width: 100%;
 		background-color: $sectionColor;
 		border-radius: 0px 0px 50px 0px;
 		padding: 4.2rem 1rem;
+		margin: 0 0 0 0.7rem;
 	}
 }
 
@@ -73,45 +76,49 @@
 	.service-title {
 		&__text {
 			font-size: 24px;
+			max-width: 190px;
 		}
 	}
 	.service-frames {
 		flex-direction: column;
-		
 	}
 	.card {
 		padding: 1rem;
-	
+
 		&__title {
 			font-size: 20px;
 		}
-	
+
 		&__paragraph {
-max-width: 245px;
+			max-width: 245px;
 		}
 	}
 	.left {
 		&__top-card {
-			padding: 4.2rem 6rem;
+			padding: 4.2rem 2rem;
 			border-radius: 50px;
 		}
-	
+
 		&__bottom-card {
-		display: none;
+			display: none;
 		}
 	}
 	.right {
 		&__top-card {
-		display: none;
+			display: none;
 		}
-	
+
 		&__bottom-card {
-		display: none;
+			display: none;
 		}
 	}
-	
-	.general__button-service{
+
+	.general__button-service {
 		border: none;
 		color: $battonColor;
+		padding: 0;
+		&::after {
+			content: "";	
+		}
 	}
 }

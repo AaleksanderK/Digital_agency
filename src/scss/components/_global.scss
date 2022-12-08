@@ -12,6 +12,8 @@ html {
 	color: $textColor;
 	padding: 0.99rem 1.5rem;
 	border-radius: 30px;
+	transition: 0.5s;
+
 	cursor: pointer;
 	&::after {
 		content: "↗";

@@ -2,80 +2,85 @@
 	display: flex;
 	position: relative;
 
-
 	&__left-frame {
 		display: flex;
 		flex-direction: column;
 	}
 
-
 	&__right-frame {
 		display: flex;
 		flex-direction: column;
-		margin: 3rem 1.1rem ;
-
+		margin: 3rem 1.1rem;
 	}
 }
 
-.left-frame__presentation{
+.left-frame__presentation {
 	max-width: 264px;
-		max-height: 264px;
-		border-radius: 50px 0px 0px 0px;
+	max-height: 264px;
+	border-radius: 50px 0px 0px 0px;
 	margin-bottom: 1.1rem;
 }
-.left-frame__accord{
+.left-frame__accord {
 	max-width: 220px;
 	max-height: 220px;
 	margin-left: 2rem;
 }
 
-.left-frame__ornament-line{
+.left-frame__ornament-line {
 	max-width: 11px;
 	max-height: 103px;
 	position: absolute;
-top: 0;
-left: 55%;
+	top: 0;
+	left: 55%;
 }
 .left-frame__development {
 	max-width: 220px;
 	max-height: 220px;
 	border-radius: 0px 50px 0px 0px;
 	margin-bottom: 1.1rem;
-z-index: 1;
+	z-index: 1;
 }
-.left-frame__meeting{
+.left-frame__meeting {
 	max-width: 264px;
 	max-height: 264px;
 	border-radius: 0px 0px 50px 0px;
 	z-index: 1;
 }
 
-.left-frame__cercle-line{
-	max-width: 174px;
-	max-height: 168px;
+.left-frame__cercle-line {
+	max-width: 11vw;
+	// max-height: 168px;
 	position: absolute;
-bottom: 0;
-left: 83%;
-z-index: 0;
+	top: 80%;
+	// bottom: 0;
+	left: 83%;
+	z-index: 0;
 }
 
 @media (max-width: 1000px) {
-	.left-frame__cercle-line{
-	left: 75%;
-	z-index: 0;
+	.photo-frames {
+		&__right-frame {
+
+			margin: 1.5rem 1.1rem;
+		}
 	}
-	.left-frame__presentation{
-		max-width: 100%;
+	.left-frame__cercle-line {
+		left: 65%;
+top: 55%;
 
 	}
-	.left-frame__accord{
+	.left-frame__presentation {
 		max-width: 100%;
+	}
+	.left-frame__accord {
+		max-width: 100%;
+	margin-left: 1rem;
 
 	}
 	.left-frame__development {
 		max-width: 100%;
 	}
-	.left-frame__meeting{
+	.left-frame__meeting {
 		max-width: 100%;
 	}
 }
@@ -84,16 +89,20 @@ z-index: 0;
 	.photo-frames {
 		padding: 2rem;
 	}
-	.left-frame__cercle-line{
+	.left-frame__cercle-line {
 		left: 65%;
 		z-index: 0;
-		}
-}
-@media (max-width: 800px) {
-	.left-frame__cercle-line{
 		max-width: 89px;
 		max-height: 86px;
-bottom: 20px;
-
+		bottom: 20px;
+	}
+	.photo-frames {
+	justify-content: center;
+	}
+}
+@media (max-width: 500px) {
+	
+	.left-frame__cercle-line {
+top: 70%;
 	}
 }

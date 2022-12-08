@@ -53,7 +53,14 @@
 		}
 	}
 }
-
+.form__stroke-arrow{
+	position: relative;
+	&::after{
+		content: url(../../assets/image/icons/Stroke-arrow.png);
+		position: absolute;
+		right: 0;
+	}
+}
 .requisites-cards {
 	display: flex;
 	align-items: center;
@@ -116,24 +123,8 @@
 }
 
 .social-link {
-	&__twitter {
 		padding: 0 13.5px;
-	}
-
-	&__facebook {
-		padding: 0 13.5px;
-
-	}
-
-	&__dribbble {
-		padding: 0 13.5px;
-
-	}
-
-	&__github {
-		padding: 0 13.5px;
-
-	}
+	cursor: pointer;
 }
 .dotes-column {
 	position: absolute;
@@ -141,31 +132,24 @@
 	top: 1rem;
 }
 @media (max-width: 500px) {
+	.footer {
+		&__form {
+			padding: 60px 48px;
+			background-color: $battonColor;
+			border-radius: 30px;
+			margin-top: 2.4rem;
+		}
+	}
+	.cards {
+		&__inform {
+			padding: 3rem 0 0;
+		}
+	}
 	.footer-requisites {
 		flex-direction: column;
 	}
 	.requisites-cards {
 		flex-direction: column;
-	}
-	.inform {
-		&__title {
-			text-align: center;
-		}
-	
-		&__street {
-			text-align: center;
-
-		}
-	
-		&__phone {
-			text-align: center;
-
-		}
-	
-		&__contact-email {
-			text-align: center;
-
-		}
 	}
 	.additions-rights{
 		display: none;
@@ -180,6 +164,31 @@
 	.privacy {
 		&__title {
 			padding-bottom: 20px;
+			width: 100px;
+			text-align: center;
+		}
+	}
+	.dotes-column {
+		display: none;
+	}
+	.inform {
+		&__title {
+			text-align: center;
+
+		}
+	
+		&__street {
+			text-align: center;
+
+		}
+	
+		&__phone {
+			text-align: center;
+
+		}
+	
+		&__contact-email {
+			text-align: center;
 		}
 	}
 }
