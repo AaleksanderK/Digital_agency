@@ -553,7 +553,7 @@ html {
 }
 .banner-text__title::after {
   content: "";
-  background-image: url(../../../../src/assets/image/icons/dotted_line.png);
+  background-image: url(../../../src/assets/image/icons/dotted_line.png);
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
